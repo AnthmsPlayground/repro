@@ -1,8 +1,9 @@
 on:
   workflow_dispatch:
+  push:
 
 jobs:
   job-name:
     runs-on: ubuntu-latest
     steps:
-      - run: echo 'done'
+      - run: sleep 1m
