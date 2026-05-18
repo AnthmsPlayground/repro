@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - env:
-          GH_TOKEN: ${{ secrets.PAT }}
+          GH_TOKEN: ${{ github.token }}
         run: |
           sleep 30s
           gh pr close ${{ github.event.pull_request.number }}
